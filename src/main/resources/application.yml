@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: mym-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/rkumar0206/mym-configurations
+          username: rkumar0206
+          password: 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
+          clone-on-start: true
+          default-label: main
+
+server:
+  port: 8727
