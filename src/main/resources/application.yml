@@ -11,5 +11,9 @@ spring:
           clone-on-start: true
           default-label: main
 
+
 server:
   port: 8727
+  
+encrypt:
+  key: asbahjbcjhabjhabjcbj%%$#Q$7hdbsjhbjbbEA$A$AT8897____q5656541646
