@@ -7,7 +7,7 @@ spring:
         git:
           uri: https://github.com/manage-your-money-org/mym-configurations
           username: rkumar0206
-          password: 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
+          password: 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
           default-label: ${config.branch:main}
 
 
