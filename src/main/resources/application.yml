@@ -5,11 +5,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/rkumar0206/mym-configurations
+          uri: https://github.com/manage-your-money-org/mym-configurations
           username: rkumar0206
-          password: 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
-          clone-on-start: true
-          default-label: main
+          password: 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
+          default-label: ${config.branch:main}
 
 
 server:
@@ -17,3 +16,11 @@ server:
   
 encrypt:
   key: asbahjbcjhabjhabjcbj%%$#Q$7hdbsjhbjbbEA$A$AT8897____q5656541646
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"
+      base-path: "/mym/${spring.application.name}/actuator"
