@@ -6,8 +6,8 @@ spring:
       server:
         git:
           uri: https://github.com/manage-your-money-org/mym-configurations
-          username: rkumar0206
-          password: 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
+          username: ${github.username}
+          password: ${github.password.token}
           default-label: ${config.branch:main}
 
 
@@ -15,7 +15,7 @@ server:
   port: 8727
   
 encrypt:
-  key: asbahjbcjhabjhabjcbj%%$#Q$7hdbsjhbjbbEA$A$AT8897____q5656541646
+  key: ${encryption.secret.key}
 
 management:
   endpoints:
